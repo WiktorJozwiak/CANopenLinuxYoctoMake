@@ -71,7 +71,7 @@ clean:
 
 install:
 	install -d ${D}${bindir}
-	install -m 755 $(LINK_TARGET) ${D}${bindir}/$(LINK_TARGET)
+	install -m 0755 $(LINK_TARGET) ${D}${bindir}/$(LINK_TARGET)
 #	cp $(LINK_TARGET) ${D}${bindir}/$(LINK_TARGET)
 
 %.o: %.c
