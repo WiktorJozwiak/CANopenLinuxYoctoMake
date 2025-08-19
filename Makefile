@@ -70,7 +70,7 @@ clean:
 	rm -f $(OBJS) $(LINK_TARGET)
 
 install:
-	cp $(LINK_TARGET) /usr/bin/$(LINK_TARGET)
+	cp $(LINK_TARGET) ${D}${bindir}(LINK_TARGET)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
