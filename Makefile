@@ -70,8 +70,9 @@ clean:
 	rm -f $(OBJS) $(LINK_TARGET)
 
 install:
-	install -d ${DESTDIR}${BINDIR}
 	install -m 0755 $(LINK_TARGET) ${DESTDIR}${BINDIR}
+#	install -d ${DESTDIR}${BINDIR} 
+#	install -m 0755 $(LINK_TARGET) ${DESTDIR}${BINDIR}
 #	cp $(LINK_TARGET) ${D}${bindir}/$(LINK_TARGET)
 
 %.o: %.c
